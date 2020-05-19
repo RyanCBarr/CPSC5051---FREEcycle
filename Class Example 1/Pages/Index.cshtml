@@ -11,16 +11,25 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
+
+<div id="floatbar" style="background:gray;
+                                width:200px;
+                                height:40px;
+                                position:absolute;
+                                left:0;top:74px;">
+    <h6> <a href="http://www.google.com">TEST FLOATING MENU</a></h6>
+</div>
+
 <div class="card-columns">
     @foreach (var product in Model.Products)
     {
-    <div class="card">
-        <div class="card-img" style="background-image: url('@product.Image')"></div>
-        <div class="card-body">
-            <h5 class="card-title">@product.Title</h5>
+        <div class="card">
+            <div class="card-img" style="background-image: url('@product.Image')"></div>
+            <div class="card-body">
+                <h5 class="card-title">@product.Title</h5>
+            </div>
+
         </div>
-        
-    </div>
-        
+
     }
 </div>
