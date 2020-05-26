@@ -6,9 +6,49 @@
     cursor: pointer;
 }
 
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+.listing {
+    border-radius: 5px;
+    height: 100px;
+    padding: 10px;
+    width: 70vw;
+    float: right;
+    background-color: #f7f7f7;
+    border: 1px solid #FDB913; /*SU yellow*/
+    margin-top: 20px;
+}
+
+.listing-img {
+    height: 80px;
+    width: 80px;
+    float: left;
+    background-color: #AA0000; /*SU Red*/
+}
+
+.listing-item-title {
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+}
+
+.listing-item-date-person {
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: small;
+    font-style: italic;
+}
+
+.listing-item-hashtags {
+    margin-top: 35px;
+    margin-left: 115px;
+
+
+    /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-.card-columns .card:hover .card-img {
+    .card-columns .card:hover .card-img {
     opacity: 1;
     -webkit-transform-style: preserve-3d;
 }
@@ -140,7 +180,7 @@ ul {
 }
 /*Backgrounds*/
 .bg-navbar {
-    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+    background: -webkit-linear-gradient(110deg, #e9a8a6 1%, #252152 10%);
     background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
