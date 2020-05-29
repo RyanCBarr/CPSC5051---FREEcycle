@@ -10,8 +10,9 @@
     border-radius: 5px;
     height: 100px;
     padding: 10px;
-    width: 70vw;
-    float: right;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f7f7f7;
     border: 1px solid #FDB913; /*SU yellow*/
     margin-top: 20px;
@@ -27,23 +28,32 @@
 .listing-item-title {
     margin-left: 15px;
     margin-top: 10px;
+    font-size: large;
     font-weight: bold;
     text-align: left;
     display: inline-block;
+    color: #AA0000;
 }
 
 .listing-item-date-person {
+    font-weight: bold;
+    text-decoration: underline overline;
     margin-top: 10px;
     text-align: right;
     margin-right: 15px;
     display: inline-block;
-    font-size: small;
+    font-size: large;
     font-style: italic;
+    background-color: #00cccc;
 }
 
 .listing-item-hashtags {
+    font-weight: bold;
     margin-top: 35px;
     margin-left: 115px;
+    font-size: large;
+    text-align:left;
+    color: #009900;
     /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
     .card-columns .card:hover .card-img

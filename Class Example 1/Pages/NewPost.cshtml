@@ -4,11 +4,38 @@
     ViewData["Title"] = "Page1";
 }
 
-<h1>Page1</h1>
+    <div class="card w-50 text-center">
+        <h1 style ="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
+        <h5 align="center">Please fill in a Title and Description below!</h5
+        <br>
+        <div class="container">
+            <form class="form-inline my-5 my-lg-3">
+                <input class="mr-sm-3" type="text" placeholder="Title" aria-label="Title" />
+            </form>
+        </div>
+        <br />
+        <div class="container">
+            <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
+        </div>
+        <br />
 
-<p align="center">
-     <a href="/Page2">
-         <img src="https://i.imgur.com/Nc4Vgzd.png">
-      </a>
- </p>
+        <div class="container">
+            <form class="form-inline my-5 my-lg-3">
+                <input class="mr-sm-3" type="text" placeholder="#Tag your item" aria-label="HashTag" />
+            </form>
+        </div>
 
+        <br />
+        <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
+            <input id="my-file-selector" type="file" class="d-none">
+            Add pictures
+        </label>
+        
+        <br />
+
+        <button class="btn btn-outline-danger btn-lg ml-auto ml-1" type="submit">
+            <a align="center" style="color:red" href="Index">POST</></a>
+        </button>
+
+
+    </div>
