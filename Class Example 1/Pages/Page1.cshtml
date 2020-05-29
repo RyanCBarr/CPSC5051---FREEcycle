@@ -5,11 +5,11 @@
 }
 
     <div align="center" class="card w-50 center">
-        <h3 align="center">Create a New Post</h3>
+        <h1 align="center">Create a New Post</h1>
         <h5 align="center">Please fill in a Title and Description below!</h5>
         <br>
         <div class="container">
-            <form class="form-inline my-2 my-lg-3">
+            <form class="form-inline my-5 my-lg-3">
                 <input class="mr-sm-3" type="text" placeholder="Title" aria-label="Title" />
             </form>
         </div>
@@ -20,17 +20,22 @@
         <br />
 
         <div class="container">
-            <form class="form-inline my-2 my-lg-3">
+            <form class="form-inline my-5 my-lg-3">
                 <input class="mr-sm-3" type="text" placeholder="#Tag your item" aria-label="HashTag" />
             </form>
         </div>
 
         <br />
-        <label class="btn btn-primary" for="my-file-selector">
+        <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
             <input id="my-file-selector" type="file" class="d-none">
             Add pictures
         </label>
         
+        <br />
+
+        <button class="btn btn-outline-danger btn-lg ml-auto ml-1" type="submit" formaction="Index.cshtml" >
+            <a align="center" style="color:red" href="Index">POST</></a>
+        </button>
 
 
     </div>
