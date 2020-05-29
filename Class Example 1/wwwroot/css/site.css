@@ -10,8 +10,9 @@
     border-radius: 5px;
     height: 100px;
     padding: 10px;
-    width: 70vw;
-    float: right;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f7f7f7;
     border: 1px solid #FDB913; /*SU yellow*/
     margin-top: 20px;
