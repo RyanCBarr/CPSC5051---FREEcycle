@@ -4,38 +4,40 @@
     ViewData["Title"] = "Page1";
 }
 
-    <div class="card w-50 text-center">
-        <h1 style ="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
-        <h5 align="center">Please fill in a Title and Description below!</h5
-        <br>
-        <div class="container">
-            <form class="form-inline my-5 my-lg-3">
-                <input class="mr-sm-3" type="text" placeholder="Title" aria-label="Title" />
-            </form>
-        </div>
-        <br />
-        <div class="container">
-            <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
-        </div>
-        <br />
-
-        <div class="container">
-            <form class="form-inline my-5 my-lg-3">
-                <input class="mr-sm-3" type="text" placeholder="#Tag your item" aria-label="HashTag" />
-            </form>
-        </div>
-
-        <br />
-        <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
-            <input id="my-file-selector" type="file" class="d-none">
-            Add pictures
-        </label>
-        
-        <br />
-
-        <button class="btn btn-outline-danger btn-lg ml-auto ml-1" type="submit">
-            <a align="center" style="color:red" href="Index2">POST</></a>
-        </button>
-
-
+<div class="card w-50 text-center">
+    <h1 style="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
+    <h5 align="center">
+        Please fill in a Title and Description below!
+    </h5>
+    <br>
+    <div class="container">
+        <form class="form-inline my-5 my-lg-3">
+            <input class="mr-sm-3" type="text" placeholder="Title" aria-label="Title" />
+        </form>
     </div>
+    <br />
+    <div class="container">
+        <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
+    </div>
+    <br />
+
+    <div class="container">
+        <form class="form-inline my-5 my-lg-3">
+            <input class="mr-sm-3" type="text" placeholder="#Tag your item" aria-label="HashTag" />
+        </form>
+    </div>
+
+    <br />
+    <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
+        <input id="my-file-selector" type="file" class="d-none">
+        <strong>Add Pictures</strong>
+    </label>
+
+    <br />
+
+    <form action="/Index2">
+        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+            <strong>POST</strong>
+        </button>
+    </form>
+</div>
