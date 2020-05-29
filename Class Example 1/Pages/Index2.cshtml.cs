@@ -10,13 +10,13 @@ using Microsoft.Extensions.Logging;
 
 namespace Class_Example_1.Pages
 {
-    public class IndexModel : PageModel
+    public class Index2Model : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<Index2Model> _logger;
         public JsonFileProductService ProductService;
         public IEnumerable<Product> Products { get; private set; }
 
-        public IndexModel(ILogger<IndexModel> logger, JsonFileProductService productService)
+        public Index2Model(ILogger<Index2Model> logger, JsonFileProductService productService)
         {
             _logger = logger;
             ProductService = productService;
