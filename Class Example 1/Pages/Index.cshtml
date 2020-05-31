@@ -27,8 +27,8 @@
 
 <!--Search bar-->
 <div class="container form-row" style="display:flex;justify-content:center;align-items:center">
-    <form class="form-inline" action="/IndexPostSearch" >
-        <div class="form-inline col-auto" >
+    <form class="form-inline" action="/IndexPostSearch">
+        <div class="form-inline col-auto">
             <input class="form-control" id="Search" size="50" placeholder="Search" name="Search" aria-label="Search">
         </div>
         <div class="form-inline col-auto">
@@ -39,12 +39,23 @@
     </form>
 </div>
 
-<!--TODO: Make pretty-->
-
-<div id="floatbar" style=" background: gray; width: 200px; height: 40px; position: absolute; left: 0; top: 74px;">
-    <h6><a href="/NewPost"><img src="~/Img/button.png"></a></h6>
-    <!--TODO: rename Page1 to NewPost-Page1? or Prototype1-Page1? or Scenario3-Page1? idk -->
+<!--BUTTON-->
+<div id="floatbar" style="width: 200px; height: 40px; position: absolute; left: 0; top: 74px;">
+    <form action="/NewPost">
+        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+            <strong>NEW POST</strong>
+        </button>
+    </form>
+    <form action="/Index">
+        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+            <strong>BACK TO TOP</strong>
+        </button>
+    </form>
 </div>
+
+
+
+
 
 <div class="container">
     <div class="sidebar">
