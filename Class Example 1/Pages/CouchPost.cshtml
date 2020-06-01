@@ -29,10 +29,32 @@
             velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
         </div>
         <div class="claim-item-button" style="margin-right:30%; margin-top:10px">
-            <form action="/Index">
-                <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
-                    <strong>I want this item!</strong>
-                </button>
-            </form>
+            <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-toggle="modal" data-target="#contactModal">
+                <strong>I want this item!</strong>
+            </button>
+        </div>
+    </div>
+    <div class="modal fade" id="contactModal" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
+                <div>
+                    <h1 style="text-decoration:underline overline; color:#AA0000" align="center"><strong>REPORT RECEIVED</strong></h1>
+                    <h1 style="color:#AA0000" align="center"><strong>This post has been removed from the FREEcycle main page pending review.</strong></h1>
+
+                    <h5 align="center"><strong>Thank you for submitting your feedback.</strong></h5>
+                    <h5 align="center"><strong>Our web administration will review the post.</strong></h5>
+                    <h5 align="center"><strong>Seattle University is committed to being a safe space. </strong></h5>
+                    <h5 align="center"><strong>We encourage you to continue your efforts in keeping this site welcoming for all.</strong></h5>
+                    <h5 align="center"><strong>Thank you.</strong></h5>
+
+                    <div class="text-center">
+                        <form action="/IndexPostRemoved">
+                            <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+                                Return to Home Page
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
