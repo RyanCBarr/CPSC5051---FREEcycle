@@ -45,7 +45,7 @@
     <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-toggle="modal" data-target="#postModal">
         <strong>NEW POST</strong>
     </button>
-   
+
     <form action="/Index">
         <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
             <strong>BACK TO TOP</strong>
@@ -161,45 +161,39 @@
 <div class="modal fade" id="postModal" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
-            
-                <br />
-                <h1 style="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
-                <h5 align="center">
-                    Please fill in a Title and Description below!
-                </h5>
-                <br>
-                <div class="container">
-                    <form class="form-inline my-5 my-lg-3">
-                        <input class="mr-sm-3" size="47" type="text" placeholder="Title" aria-label="Title" />
-                    </form>
-                </div>
-                <br />
-                <div class="container">
-                    <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
-                </div>
-                <br />
+            <h1 style="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
+            <h5 align="center">
+                Please fill in a Title and Description below!
+            </h5>
+            <br>
+            <div class="container">
+                <form class="form-inline my-5 my-lg-3">
+                    <input class="mr-sm-3" size="47" type="text" placeholder="Title" aria-label="Title" />
+                </form>
+            </div>
+            <br />
+            <div class="container">
+                <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
+            </div>
+            <br />
 
-                <div class="container">
-                    <form class="form-inline my-5 my-lg-3">
-                        <input class="mr-sm-3" size="30" type="text" placeholder="#Tag your item" aria-label="HashTag" />
-                    </form>
-                </div>
-
-                <br />
-                <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
-                    <input id="my-file-selector" type="file" class="d-none">
-                    <strong>Upload Photo</strong>
-                </label>
-
-                <br />
-
-                <form action="/IndexPostComplete">
+            <div class="container">
+                <form class="form-inline my-5 my-lg-3">
+                    <input class="mr-sm-3" size="30" type="text" placeholder="#Tag your item" aria-label="HashTag" />
+                </form>
+            </div>
+            <!--button suite in the pop up-->
+            <div class="container form-row" style="display:flex;justify-content:center;align-items:center">
+                <form class="form-inline" action="/IndexPostComplete">
+                    <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
+                        <input id="my-file-selector" type="file" class="d-none">
+                        <strong>Upload Photo</strong>
+                    </label>
                     <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
                         <strong>Publish</strong>
                     </button>
                 </form>
-            
-            <br />
+            </div>
         </div>
     </div>
 </div>
