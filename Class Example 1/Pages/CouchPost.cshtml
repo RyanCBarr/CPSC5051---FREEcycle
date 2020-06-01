@@ -29,10 +29,32 @@
             velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
         </div>
         <div class="claim-item-button" style="margin-right:30%; margin-top:10px">
-            <form action="/Index">
-                <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
-                    <strong>I want this item!</strong>
-                </button>
-            </form>
+            <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-toggle="modal" data-target="#contactModal">
+                <strong>I want this item!</strong>
+            </button>
+        </div>
+    </div>
+    <div class="modal fade" id="contactModal" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
+                <div>
+                    <h1 style="text-decoration:underline overline; color:#AA0000" align="center"><strong>REQUEST RECEIVED</strong></h1>
+                    <h1 style="color:#AA0000" align="center"><strong>This member has been contacted.</strong></h1>
+
+                    <h5 align="center"><strong>We have let this member know about your expressed interest.</strong></h5>
+                    <h5 align="center"><strong>If this person would like to reach out to you,</strong></h5>
+                    <h5 align="center"><strong>please monitor your SU email address for a response.</strong></h5>
+                    <br />
+                    <h5 align="center"><strong>Thank you for using FREEcycle.</strong></h5>
+
+                    <div class="text-center">
+                        <form action="/IndexPostComplete">
+                            <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+                                Return to Home Page
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
