@@ -6,6 +6,27 @@
     cursor: pointer;
 }
 
+a:link {
+    color: #AA0000;
+}
+
+/* visited link */
+a:visited {
+    color: #AA0000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #AA0000;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #FDB913;
+    text-decoration: none;
+}
+
 .listing {
     border-radius: 5px;
     height: 100px;
@@ -17,6 +38,7 @@
     border: 1px solid #FDB913; /*SU yellow*/
     margin-top: 20px;
 }
+
 
 .listing-img {
     height: 80px;
@@ -37,23 +59,24 @@
 
 .listing-item-date-person {
     font-weight: bold;
-    text-decoration: underline overline;
-    margin-top: 10px;
+    text-decoration: underline;
+    margin-top: 15px;
     text-align: right;
     margin-right: 15px;
     display: inline-block;
-    font-size: large;
+    font-size: small;
     font-style: italic;
-    background-color: #00cccc;
+    color: #808080;
 }
 
 .listing-item-hashtags {
     font-weight: bold;
     margin-top: 35px;
-    margin-left: 115px;
-    font-size: large;
-    text-align:left;
-    color: #009900;
+    margin-left: 95px;
+    font-size: small;
+    text-align: left;
+    font-style: italic;
+    color: #000000;
     /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
     .card-columns .card:hover .card-img
