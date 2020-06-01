@@ -4,6 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
+
 <div class="text-center">
     <h1 style="font-size:110px; color:#AA0000" class="display-4"><strong>FREEcycle</strong></h1>
 
@@ -41,11 +42,10 @@
 
 <!--BUTTON-->
 <div id="floatbar" style="width: 200px; height: 40px; position: absolute; left: 0; top: 74px;">
-    <form action="/NewPost">
-        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
-            <strong>NEW POST</strong>
-        </button>
-    </form>
+    <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-toggle="modal" data-target="#postModal">
+        <strong>NEW POST</strong>
+    </button>
+   
     <form action="/Index">
         <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
             <strong>BACK TO TOP</strong>
@@ -151,5 +151,55 @@
             <div class="listing-item-hashtags">#electronics #makers #resistor</div>
         </div>
 
+
+
     </main>
+</div>
+
+
+
+<div class="modal fade" id="postModal" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
+            <div class="card w-75" style="width:100px; margin: 0 auto">
+                <br />
+                <h1 style="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
+                <h5 align="center">
+                    Please fill in a Title and Description below!
+                </h5>
+                <br>
+                <div class="container">
+                    <form class="form-inline my-5 my-lg-3">
+                        <input class="mr-sm-3" size="47" type="text" placeholder="Title" aria-label="Title" />
+                    </form>
+                </div>
+                <br />
+                <div class="container">
+                    <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
+                </div>
+                <br />
+
+                <div class="container">
+                    <form class="form-inline my-5 my-lg-3">
+                        <input class="mr-sm-3" type="text" placeholder="#Tag your item" aria-label="HashTag" />
+                    </form>
+                </div>
+
+                <br />
+                <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
+                    <input id="my-file-selector" type="file" class="d-none">
+                    <strong>Upload Photo</strong>
+                </label>
+
+                <br />
+
+                <form action="/IndexPostComplete">
+                    <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+                        <strong>Publish</strong>
+                    </button>
+                </form>
+            </div>
+            <br />
+        </div>
+    </div>
 </div>
