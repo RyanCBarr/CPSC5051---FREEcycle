@@ -4,34 +4,131 @@
     ViewData["Title"] = "PostTemplate";
 }
 
-    <div class="post">
-        <div class="post-title-flag">
-            <div class="post-title" style="float:left">
-                <h1 style="color:#AA0000">FIREARM AMMO TO GIVEAWAY</h1>
-            </div>
-            <div class="post-flag" style="float:right; margin-right:30%;">
-                <a href="/FlagReportPage">
-                    <img src="~/Img/flag.png" style="width:30px;height:30px;" alt="Flag Post">
-                </a>
-            </div>
+<div class="post">
+    <div class="post-title-flag">
+        <div class="post-title" style="float:left">
+            <h1 style="color:#AA0000">FIREARM AMMO TO GIVEAWAY</h1>
         </div>
-        <div class="post-image" style="float:left; margin-top:10px; margin-left:0px; margin-right:50%;">
-            <img src="~/img/bullets.png">
-        </div>
-        <!--clear up this weird whitespace, no idea where it's coming from-->
-        <div class="post-description" style="float:left; margin-top:0px; margin-left:0px; margin-right:40%;">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
-            velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </div>
-        <div class="claim-item-button" style="margin-right:30%;">
-            <form action="/Index">
-                <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
-                    <strong>I want this item!</strong>
-                </button>
-            </form>
+        <div class="post-flag" style="float:right; margin-right:30%;">
+            <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-toggle="modal" data-target="#flagModal">
+                <img src="~/Img/flag.png" style="width:30px;height:30px;" alt="Flag Post">
+            </button>
         </div>
     </div>
+    <div class="post-image" style="width:50%; margin-top:10px;">
+        <img src="~/Img/bullets.png">
+    </div>
+    <!--clear up this weird whitespace, no idea where it's coming from-->
+    <div class="post-description" style="float:left; margin-top:0px; margin-left:0px; margin-right:40%;">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    </div>
+    <div class="claim-item-button" style="margin-right:30%; margin-top:10px">
+        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-toggle="modal" data-target="#contactModal">
+            <strong>I want this item!</strong>
+        </button>
+    </div>
+</div>
+<div class="modal fade" id="contactModal" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
+            <div>
+                <h1 style="text-decoration:underline overline; color:#AA0000" align="center"><strong>REQUEST RECEIVED</strong></h1>
+                <h1 style="color:#AA0000" align="center"><strong>This member has been contacted.</strong></h1>
+
+                <h5 align="center"><strong>We have let this member know about your expressed interest.</strong></h5>
+                <h5 align="center"><strong>If this person would like to reach out to you,</strong></h5>
+                <h5 align="center"><strong>please monitor your SU email address for a response.</strong></h5>
+                <br />
+                <h5 align="center"><strong>Thank you for using FREEcycle.</strong></h5>
+
+                <div class="text-center">
+                    <form action="/IndexPostComplete">
+                        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+                            Return to Home Page
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="flagModal" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
+            <div>
+                <h1 style="color:#AA0000" align="center"><strong>Thank you for bringing this</strong></h1>
+                <h1 style="color:#AA0000" align="center"><strong>item to our attention.</strong></h1>
+                <h5 align="center">In order to maintain a safe environment, we encourage you to</h5>
+                <h5 align="center">report a posting that may present any of the following violations of our user policy: </h5>
+
+                <div align="left" class="card w-50 my-lg-3 center" style="margin-left:25%;">
+                    <div class="form-check my-lg-3" style="margin-left:30px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Inappropriate Item</label>
+                    </div>
+                    <br />
+                    <div class="form-check my-lg-3" style="margin-left:30px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Danger to Student/Others</label>
+                    </div>
+                    <br />
+                    <div class="form-check my-lg-3" style="margin-left:30px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Threatening Language</label>
+                    </div>
+                    <br />
+                    <div class="form-check my-lg-3" style="margin-left:30px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Harassment</label>
+                    </div>
+                    <br />
+                    <div class="form-check my-lg-3" style="margin-left:30px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">Other
+                        <label class="form-check-label" for="exampleCheck1">
+                            <br />
+                            <div class="container">
+                                <textarea class="form-control" rows="3" cols="50" id="description" placeholder="Please put a description of the issues here:"></textarea>
+                            </div>
+                        </label>
+                    </div>
+                    <!--change me next!-->
+                    <div class="text-center">
+                        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" data-dismiss="modal" data-toggle="modal" data-target="#confirmModal">
+                            <strong>REPORT</strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmModal" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #ffffff; border-radius: 10px;">
+            <h1 style="text-decoration:underline overline; color:#AA0000" align="center"><strong>REPORT RECEIVED</strong></h1>
+            <h1 style="color:#AA0000" align="center"><strong>This post has been removed from the FREEcycle main page pending review.</strong></h1>
+
+            <h5 align="center"><strong>Thank you for submitting your feedback.</strong></h5>
+            <h5 align="center"><strong>Our web administration will review the post.</strong></h5>
+            <h5 align="center"><strong>Seattle University is committed to being a safe space. </strong></h5>
+            <h5 align="center"><strong>We encourage you to continue your efforts in keeping this site welcoming for all.</strong></h5>
+            <h5 align="center"><strong>Thank you.</strong></h5>
+
+            <div class="text-center">
+                <form action="/IndexPostRemoved">
+                    <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+                        Return to Home Page
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
