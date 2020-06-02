@@ -1,0 +1,43 @@
+﻿@page
+@model Class_Example_1.Pages.Page1Model
+@{
+    ViewData["Title"] = "Page1";
+}
+
+<div class="card w-50" style="width:auto;margin: 0 auto">
+    <h1 style="color:#AA0000" align="center"><strong>Create a New Post</strong></h1>
+    <h5 align="center">
+        Please fill in a Title and Description below!
+    </h5>
+    <br>
+    <div class="container">
+        <form class="form-inline my-5 my-lg-3">
+            <input class="mr-sm-3" size="50"type="text" placeholder="Title" aria-label="Title" />
+        </form>
+    </div>
+    <br />
+    <div class="container">
+        <textarea class="form-control" rows="7" id="description" placeholder="Description"></textarea>
+    </div>
+    <br />
+
+    <div class="container">
+        <form class="form-inline my-5 my-lg-3">
+            <input class="mr-sm-3" type="text" placeholder="#Tag your item" aria-label="HashTag" />
+        </form>
+    </div>
+
+    <br />
+    <label class="btn btn-outline-danger btn-lg" for="my-file-selector">
+        <input id="my-file-selector" type="file" class="d-none">
+        <strong>Upload Photo</strong>
+    </label>
+
+    <br />
+
+    <form action="/IndexPostComplete">
+        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+            <strong>Publish</strong>
+        </button>
+    </form>
+</div>

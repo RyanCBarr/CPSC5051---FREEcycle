@@ -1,0 +1,37 @@
+﻿@page
+@model Class_Example_1.Pages.PostTemplateModel
+@{
+    ViewData["Title"] = "PostTemplate";
+}
+
+    <div class="post">
+        <div class="post-title-flag">
+            <div class="post-title" style="float:left">
+                <h1 style="color:#AA0000">TITLE HERE</h1>
+            </div>
+            <div class="post-flag" style="float:right; margin-right:30%;">
+                <a asp-page="FlagReportPage">
+                    <img src="~/Img/flag.png" style="width:30px;height:30px;" alt="Flag Post">
+                </a>
+            </div>
+        </div>
+        <div class="post-image" style="float:left; margin-top:10px; margin-left:0px; margin-right:50%;">
+            <img src="~/Img/couch.jpg">
+        </div>
+        <!--clear up this weird whitespace, no idea where it's coming from-->
+        <div class="post-description" style="float:left; margin-top:0px; margin-left:0px; margin-right:40%;">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+            velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </div>
+        <div class="claim-item-button" style="margin-right:30%;">
+            <form action="/Index">
+                <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+                    <strong>I want this item!</strong>
+                </button>
+            </form>
+        </div>
+    </div>

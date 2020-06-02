@@ -1,0 +1,22 @@
+﻿@page
+@model Class_Example_1.Pages.FlagPage3Model
+@{
+    ViewData["Title"] = "Flagging Scenario: Report Resolution";
+}
+
+<h1 style="text-decoration:underline overline; color:#AA0000" align="center"><strong>REPORT RECEIVED</strong></h1>
+<h1 style="color:#AA0000" align="center"><strong>This post has been removed from the FREEcycle main page pending review.</strong></h1>
+
+<h5 align="center"><strong>Thank you for submitting your feedback.</strong></h5>
+<h5 align="center"><strong>Our web administration will review the post.</strong></h5>
+<h5 align="center"><strong>Seattle University is committed to being a safe space. </strong></h5>
+<h5 align="center"><strong>We encourage you to continue your efforts in keeping this site welcoming for all.</strong></h5>
+<h5 align="center"><strong>Thank you.</strong></h5>
+
+<div class="text-center">
+    <form action="/IndexPostRemoved">
+        <button class="btn btn-outline-danger btn-lg btn-block my-lg-2" type="submit">
+            Return to Home Page
+        </button>
+    </form>
+</div>
